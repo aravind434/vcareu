@@ -18,10 +18,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-footer {
-  background-color: #555;
-  color: white;
-  padding: 15px;
+
+.header {
+  height: 70px;
+  margin-bottom: 20px;
 }
 
 .container-body {
@@ -31,5 +31,8 @@ footer {
 }
 
 footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
   margin-top:0px
 }

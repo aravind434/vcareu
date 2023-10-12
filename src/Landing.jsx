@@ -3,7 +3,7 @@ import React from "react";
 function Landing(){
     return(
     <div className="container-fluid p-0">
-      <div className=" bg-dark ">
+      <div className="header bg-dark ">
         <ul className="nav">
           <li className="nav-item">
             <a className="nav-link" href="#">Home</a>

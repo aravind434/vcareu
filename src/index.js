@@ -39,7 +39,7 @@ const router = createBrowserRouter([
           element: <Hprofiles/>
         },
         {
-          path: "/hdetails",
+          path: "/hdetails/:hid",
           element: <Hdetails/>
         },
         {

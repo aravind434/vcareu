@@ -5,7 +5,8 @@ const Home = () =>{
     const {data,isLoading} = useGetcarouselimgByNameQuery()
     return(
         // Carousel
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div id="demo" className="carousel slide" data-bs-ride="carousel">
+            <h1>welcome to VcareU consulations</h1>
             {/* Indicators/dots */}
             {/* <div class="carousel-indicators">
             <ul id="ul-carousel">

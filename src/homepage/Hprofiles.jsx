@@ -1,10 +1,15 @@
 import React from "react";
 import { useGethospitalByNameQuery, useLazyGethospitalByNameQuery } from "../services/hdataservice";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Hprofiles(){
     let {data, isLoading} = useGethospitalByNameQuery();
     let [fn] = useLazyGethospitalByNameQuery();
+    const navigate = useNavigate();
+
+    const seeMore = (id) =>{
+        navigate(`/hdetails/${id}`)
+    }
     return(
         <div className="container hprofiles">
             <h1 className="text-center">List of available Hospitals</h1>
@@ -29,7 +34,7 @@ function Hprofiles(){
                                     </div>
                                     <p className="Haddress"><b>Address:</b>{hospital.address}</p>
                                     <span className="Hrating"><b>rating: </b>{hospital.rating}</span> <br/>
-                                    <Link to="/hdetails" className="text-primary">see more...</Link> 
+                                    <Link className="text-primary" onClick={()=>{seeMore(hospital.id)}}>see more...</Link> 
                                 </li>
                                 
                                 

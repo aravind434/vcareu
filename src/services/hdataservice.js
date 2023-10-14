@@ -21,9 +21,12 @@ export const hospitalApi = createApi({
             }
         }
       }),
+      gethospitaldetailsById: builder.query({
+        query: (id) => `/hospitals/${id}`,
+      }),
   }),
 })
 
 // Export hooks for usage in functional components, which are
 // auto-generated based on the defined endpoints
-export const { useGethospitalByNameQuery,useLazyGethospitalByNameQuery,useGetcarouselimgByNameQuery,useAddhospitalByIdMutation} = hospitalApi
+export const { useGethospitalByNameQuery,useLazyGethospitalByNameQuery,useGetcarouselimgByNameQuery,useAddhospitalByIdMutation,useGethospitaldetailsByIdQuery} = hospitalApi

@@ -1,6 +1,6 @@
 import React from "react";
 import { useGethospitaldetailsByIdQuery } from "../services/hdataservice";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 
 const Hdetails = () => {
@@ -9,7 +9,7 @@ const Hdetails = () => {
     console.log("hospital details data",data)
     return(
         <div className="container hdetails">
-            <div className="header">
+            <div className="hdetails-header" style={{background: '#a6d2f8'}}>
                 <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v3/images/logo.svg" className="img-fluid" alt=""></img>  
             </div> <hr/>
             {
@@ -176,10 +176,7 @@ const Hdetails = () => {
                 </div>
                 </body>
             }
-            
-           
-            
-            
+            <Link style={{position:'fixed', bottom:'10px', right:'80px'}}><button className="rounded" style={{ background:'#FFC107', border:'1px solid #FFC107',padding:'12px 36px',color: 'chocolate',fontWeight: '600'}}>Book Appointment</button></Link> 
         </div>
     )
 }

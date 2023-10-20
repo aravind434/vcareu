@@ -22,7 +22,7 @@ function Hprofiles(){
                 data && data.map(hospital=>{
                     return(
                             <li id="hlist">
-                                <h4 className="text-center Hname">{hospital.name.toUpperCase()}</h4>
+                                <h4 className="text-center Hname">{hospital.name}</h4>
                                 <div className="img-parent">
                                     <img src={hospital.image} alt=""/>
                                 </div><br/>

@@ -18,7 +18,8 @@ import Hdetails from './homepage/Hdetails';
 import Hadd from './adminpage/Hadd';
 import Dashboard from './adminpage/Dashboard';
 import Addbeds from './adminpage/Addbeds';
-// import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+import "../node_modules/bootstrap/dist/js/bootstrap";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,12 +27,12 @@ const router = createBrowserRouter([
 
     children:[
       {
-        path: "/",
+        path: "",
         element: <Landing/>,
 
       children:[
         {
-          path: "/",
+          path: "",
           element: <Home/>
         },
         {

@@ -176,7 +176,7 @@ const Hdetails = () => {
                 </div>
                 </body>
             }
-            <Link style={{position:'fixed', bottom:'10px', right:'80px'}}><button className="rounded" style={{ background:'#FFC107', border:'1px solid #FFC107',padding:'12px 36px',color: 'chocolate',fontWeight: '600'}}>Book Appointment</button></Link> 
+            <Link to={`/${data?.name}/BookAppointment/${hid}`} className="rounded" style={{position:'fixed', bottom:'50px', right:'80px',background:'#FFC107', border:'1px solid #FFC107',padding:'12px 36px',color: 'chocolate',fontWeight: '600'}}><span>Book Appointment</span></Link> 
         </div>
     )
 }

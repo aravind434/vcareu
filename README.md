@@ -21,4 +21,14 @@ To run server ==> nodemon filename with extension(.js) and it will restart the s
 -> set the nodemon to a script to start with simple command is 
 copy the script snippet from package.json dependencies and paste it inside the db package.json remove other things keep only the start property from that file and give the value to the start property is "start":"nodemon filename with extension" and now run the command npm start simply  at the db directory and it automatically restart on db data change also...
 
+==>To display the available beds categorized we need to use lodash library.
+    groupBy method used from lodash library to categorized beds , here we can use array methods as well to categorize.
+    To install lodash => npm i --save lodash.
+
+==> Install bootstrap-icons to display icons 
+    npm install bootstrap-icons
+
+==>Need to install the firebase and create project in firebase and configure the authentication related in app.jsx and get the user details while book the bed.
+    =>To instal firebase npm i firebase.
+
 

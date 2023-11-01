@@ -28,7 +28,7 @@ function Hprofiles(){
                                 </div><br/>
                                 <li>
                                     <div className="Hbeds">
-                                        <b>Total Beds: </b><br/>
+                                        <b>Total Beds:{hospital.beds?.length} </b><br/>
                                         {/* <span ><b className="text-primary">A/C Beds: </b>{hospital.beds.ac}</span><br/>
                                         <span ><b className="text-warning">General Beds: </b>{hospital.beds.general}</span> */}
                                     </div>

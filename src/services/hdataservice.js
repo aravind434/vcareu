@@ -40,4 +40,4 @@ export const hospitalApi = createApi({
 
 // Export hooks for usage in functional components, which are
 // auto-generated based on the defined endpoints
-export const { useGethospitalByNameQuery,useLazyGethospitalByNameQuery,useGetcarouselimgByNameQuery,useAddhospitalByIdMutation,useGethospitaldetailsByIdQuery,useAddbedsMutation} = hospitalApi
+export const { useGethospitalByNameQuery,useLazyGethospitalByNameQuery,useGetcarouselimgByNameQuery,useAddhospitalByIdMutation,useGethospitaldetailsByIdQuery,useAddbedsMutation,useLazyGethospitaldetailsByIdQuery} = hospitalApi

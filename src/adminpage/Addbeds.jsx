@@ -15,26 +15,30 @@ const Addbeds = () => {
 
     useEffect(()=>{
         console.log("updated with newbeds",selectedhospital);
+        // selectedhospital.beds.length > 0 && console.log("selected hospital bed count ",[selectedhospital.beds].length)
     },[selectedhospital]);
-
+    // selectedhospital.beds && console.log("beds count", JSON.stringify(selectedhospital).beds?.length )
     //To update the bedtypes and selectedhospital states
     function selectedHospital(hsptl) {
         
         setselectedhsptlbedtypes(JSON.parse(hsptl).bedTypes);
         setselectedhospital(JSON.parse(hsptl));
+        
     }
 
     //beds obj creation and added to an array, update the state and passing the updated obj to server through hook function
     function addBeds(){
         debugger
         var newbeds = [];
+        var existedbedscount = selectedhospital.beds.filter(beds=> beds.bedtype === selectedbedtype).length;
+        console.log("existed beds", existedbedscount);
         for(var i=0;i<=bedcount-1;i++){
             var newbed = {
                 bedstatus:'open',
                 bedtype:selectedbedtype,
                 bedprice,
                 patients : [],
-                bedid: `${selectedbedtype+(i+1)}`
+                bedid: `${selectedbedtype+(existedbedscount+i+1)}`
             }
             newbeds.push(newbed);
         }
@@ -45,7 +49,7 @@ const Addbeds = () => {
     }
 
     return(
-        <div className="add-beds" style={{border:'1px solid darggray', padding:'10px'}}>
+        <div className="add-beds" style={{border:'1px solid darkgray', padding:'10px'}}>
             <h1>Add beds to the selected hospital</h1>
             {
                 ishospitalloading && <img src="https://i.pinimg.com/originals/8b/34/b0/8b34b0ba0e40ad966d14ef1bdf63d3db.gif" alt=""/>

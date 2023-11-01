@@ -19,6 +19,7 @@ import Hadd from './adminpage/Hadd';
 import Dashboard from './adminpage/Dashboard';
 import Addbeds from './adminpage/Addbeds';
 import "../node_modules/bootstrap/dist/js/bootstrap";
+import Bookappointment from './homepage/Bookappointment';
 
 const router = createBrowserRouter([
   {
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
             }
           ]
         },
+        {
+          path: "/:hname/BookAppointment/:hid",
+          element: <Bookappointment/>
+        }
       ],
     },
       // {

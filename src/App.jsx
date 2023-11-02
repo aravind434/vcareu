@@ -1,6 +1,4 @@
-import logo from './logo.svg';
 import './App.css';
-import Landing from './Landing';
 import { Outlet } from 'react-router-dom';
 
 //firebase

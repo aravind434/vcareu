@@ -1,5 +1,5 @@
 import React from "react";
-import Hprofiles from "./homepage/Hprofiles";
+// import Hprofiles from "./homepage/Hprofiles";
 import { Link, Outlet } from 'react-router-dom'
 
 function Landing(){
@@ -42,9 +42,9 @@ function Landing(){
               </li>
               <li class="nav-item">
                 {/* <a class="nav-link" href="#">Link</a> */}
-                <Link class="nav-link" to="/admin">DashBoard</Link>
+                <Link class="nav-link" to="/admin/add-hospital">DashBoard</Link>
               </li>
-              <li class="nav-item dropdown">
+              {/* <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Dropdown
                 </a>
@@ -57,7 +57,7 @@ function Landing(){
               </li>
               <li class="nav-item">
                 <a class="nav-link disabled">Disabled</a>
-              </li>
+              </li> */}
             </ul>
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>

@@ -83,3 +83,11 @@ carousel-indicators button {
 .carousel-caption { 
   color: #fa0b0b;
   }
+  
+.addhsptl-link:hover,.addbeds-link:hover {
+    background-color: rgb(171, 102, 255);
+    margin-right: 10px;
+    .nav-link{
+      color: whitesmoke;
+    }
+  }

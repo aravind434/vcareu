@@ -8,8 +8,6 @@ import { store } from './store/store';
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
 } from "react-router-dom";
 import Landing from './Landing';
 import Hprofiles from './homepage/Hprofiles';

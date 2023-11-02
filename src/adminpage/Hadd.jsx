@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {useFormik} from 'formik';
+// import {useFormik} from 'formik';
 import { Formik } from "formik";
 import { useAddhospitalByIdMutation, useLazyGethospitalByNameQuery } from "../services/hdataservice";
 import { bedtypes } from "../bedtypes";
@@ -87,7 +87,7 @@ const Hadd = () => {
                 onSubmit={(values)=>{
                     values.bedTypes = [...newbedtypes];
                     addhFn(values).then((res)=>{
-                        console.log("res::" , res)
+                        alert("Added successfully...");
                     });
                     rFn();
                     console.log("new hospital", values)

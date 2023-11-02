@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {useFormik} from 'formik';
+// import {useFormik} from 'formik';
 import { useAddbedsMutation, useGethospitalByNameQuery } from "../services/hdataservice";
 
 const Addbeds = () => {
@@ -45,6 +45,7 @@ const Addbeds = () => {
         var latestdata = {...selectedhospital, beds:[...selectedhospital.beds,...newbeds]};
         setselectedhospital({...selectedhospital, beds:[...selectedhospital.beds,...newbeds]});
         addbedsfn(latestdata);
+        alert("added beds successfully...")
 
     }
 
@@ -83,7 +84,7 @@ const Addbeds = () => {
                     </>
                 )
             }
-            <button onClick={()=>{addBeds()}}>Add Beds</button>
+            <button style={{marginTop:"5px"}} onClick={()=>{addBeds()}}>Add Beds</button>
         </div>
     )
 }
